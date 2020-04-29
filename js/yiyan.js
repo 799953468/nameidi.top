@@ -4,7 +4,7 @@ window.onload=function () {
     update();
     function update() {
         gethi = new XMLHttpRequest();
-        gethi.open("GET","https://v1.hitokoto.cn/?c=d&c=i");
+        gethi.open("GET","https://v1.hitokoto.cn/?c=d&c=l&c=j");
         //这里选择类别，详见官方文档
         gethi.send();
         gethi.onreadystatechange = function () {
