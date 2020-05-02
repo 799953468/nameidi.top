@@ -73,20 +73,20 @@
 		background: #1b1f22;
 	}
 
-		body.is-switching *, body.is-switching *:before, body.is-switching *:after {
-			-moz-animation: none !important;
-			-webkit-animation: none !important;
-			-ms-animation: none !important;
-			animation: none !important;
-			-moz-transition: none !important;
-			-webkit-transition: none !important;
-			-ms-transition: none !important;
-			transition: none !important;
-			-moz-transition-delay: none !important;
-			-webkit-transition-delay: none !important;
-			-ms-transition-delay: none !important;
-			transition-delay: none !important;
-		}
+	body.is-switching *, body.is-switching *:before, body.is-switching *:after {
+		-moz-animation: none !important;
+		-webkit-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+		-moz-transition: none !important;
+		-webkit-transition: none !important;
+		-ms-transition: none !important;
+		transition: none !important;
+		-moz-transition-delay: none !important;
+		-webkit-transition-delay: none !important;
+		-ms-transition-delay: none !important;
+		transition-delay: none !important;
+	}
 
 /* Type */
 
