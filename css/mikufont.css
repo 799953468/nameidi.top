@@ -12,7 +12,7 @@
        url('../fonts/source-sans-pro-300italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/source-sans-pro-300italic.svg#SourceSans Pro') format('svg'); /* Legacy iOS */
 }
-  
+
 /* source-sans-pro-600italic */
 @font-face {
   font-family: 'Source Sans Pro';
@@ -26,7 +26,7 @@
        url('../fonts/source-sans-pro-600italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/source-sans-pro-600italic.svg#SourceSans Pro') format('svg'); /* Legacy iOS */
 }
-  
+
 /* source-sans-pro-300 */
 @font-face {
   font-family: 'Source Sans Pro';
@@ -40,7 +40,7 @@
        url('../fonts/source-sans-pro-300.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/source-sans-pro-300.svg#SourceSans Pro') format('svg'); /* Legacy iOS */
 }
-  
+
 /* source-sans-pro-600 */
 @font-face {
   font-family: 'Source Sans Pro';
@@ -54,4 +54,3 @@
        url('../fonts/source-sans-pro-600.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/source-sans-pro-600.svg#SourceSans Pro') format('svg'); /* Legacy iOS */
 }
-  
