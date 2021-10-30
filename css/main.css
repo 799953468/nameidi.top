@@ -176,17 +176,8 @@ body {
 body.is-switching *,
 body.is-switching *:before,
 body.is-switching *:after {
-    -moz-animation: none !important;
-    -webkit-animation: none !important;
-    -ms-animation: none !important;
     animation: none !important;
-    -moz-transition: none !important;
-    -webkit-transition: none !important;
-    -ms-transition: none !important;
     transition: none !important;
-    -moz-transition-delay: none !important;
-    -webkit-transition-delay: none !important;
-    -ms-transition-delay: none !important;
     transition-delay: none !important;
 }
 
@@ -322,6 +313,7 @@ h6 {
         font-size: 1.75rem;
         line-height: 1.4;
     }
+
     h2 {
         font-size: 1.25em;
         line-height: 1.5;
@@ -411,7 +403,7 @@ form .field.half.last {
     padding: 0 2.00rem 0 0;
 }
 
-form>.actions {
+form > .actions {
     margin: 1.875rem 0 0 0 !important;
 }
 
@@ -419,16 +411,20 @@ form>.actions {
     form .field {
         margin: 0 0 1.125rem 0;
     }
+
     form .field.half {
         padding: 0 0 0 0.5625rem;
     }
+
     form .field.half.first {
         padding: 0 0.5625rem 0 0;
     }
+
     form .field.half.last {
         padding: 0 2.00rem 0 0;
     }
-    form>.actions {
+
+    form > .actions {
         margin: 1.5rem 0 0 0 !important;
     }
 }
@@ -439,6 +435,7 @@ form>.actions {
         float: none;
         padding: 0;
     }
+
     form .field.half.first {
         padding: 0;
     }
@@ -461,13 +458,7 @@ input[type="email"],
 input[type="tel"],
 select,
 textarea {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    -ms-appearance: none;
     appearance: none;
-    -moz-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-    -webkit-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-    -ms-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
     transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
     background: transparent;
     border-radius: 4px;
@@ -563,8 +554,8 @@ input[type="radio"] {
     z-index: -1;
 }
 
-input[type="checkbox"]+label,
-input[type="radio"]+label {
+input[type="checkbox"] + label,
+input[type="radio"] + label {
     text-decoration: none;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -581,8 +572,8 @@ input[type="radio"]+label {
     position: relative;
 }
 
-input[type="checkbox"]+label:before,
-input[type="radio"]+label:before {
+input[type="checkbox"] + label:before,
+input[type="radio"] + label:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-family: FontAwesome;
@@ -591,8 +582,8 @@ input[type="radio"]+label:before {
     text-transform: none !important;
 }
 
-input[type="checkbox"]+label:before,
-input[type="radio"]+label:before {
+input[type="checkbox"] + label:before,
+input[type="radio"] + label:before {
     -moz-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
     -webkit-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
     -ms-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
@@ -610,26 +601,26 @@ input[type="radio"]+label:before {
     width: 1.65rem;
 }
 
-input[type="checkbox"]:checked+label:before,
-input[type="radio"]:checked+label:before {
+input[type="checkbox"]:checked + label:before,
+input[type="radio"]:checked + label:before {
     background: #ffffff !important;
     border-color: #ffffff !important;
     color: #1b1f22;
     content: '\f00c';
 }
 
-input[type="checkbox"]:focus+label:before,
-input[type="radio"]:focus+label:before {
+input[type="checkbox"]:focus + label:before,
+input[type="radio"]:focus + label:before {
     background: rgba(255, 255, 255, 0.075);
     border-color: #ffffff;
     box-shadow: 0 0 0 1px #ffffff;
 }
 
-input[type="checkbox"]+label:before {
+input[type="checkbox"] + label:before {
     border-radius: 4px;
 }
 
-input[type="radio"]+label:before {
+input[type="radio"] + label:before {
     border-radius: 100%;
 }
 
@@ -668,9 +659,9 @@ input[type="radio"]+label:before {
     padding: 1.5em;
 }
 
-.box> :last-child,
-.box> :last-child> :last-child,
-.box> :last-child> :last-child> :last-child {
+.box > :last-child,
+.box > :last-child > :last-child,
+.box > :last-child > :last-child > :last-child {
     margin-bottom: 0;
 }
 
@@ -698,7 +689,7 @@ input[type="radio"]+label:before {
     text-transform: none !important;
 }
 
-.icon>.label {
+.icon > .label {
     display: none;
 }
 
@@ -713,11 +704,8 @@ input[type="radio"]+label:before {
 }
 
 .image:before {
-    -moz-pointer-events: none;
-    -webkit-pointer-events: none;
-    -ms-pointer-events: none;
     pointer-events: none;
-    background-image: url("../../images/overlay.png");
+    background-image: url("https://blog-1252347741.cos.ap-shanghai.myqcloud.com/image/bg.jpg");
     background-color: rgba(19, 21, 25, 0.5);
     border-radius: 4px;
     content: '';
@@ -889,7 +877,7 @@ ul.actions.vertical li:first-child {
     padding-top: 0;
 }
 
-ul.actions.vertical li>* {
+ul.actions.vertical li > * {
     margin-bottom: 0;
 }
 
@@ -914,7 +902,7 @@ ul.actions.fit li {
     padding: 0 0 0 1rem;
 }
 
-ul.actions.fit li>* {
+ul.actions.fit li > * {
     margin-bottom: 0;
 }
 
@@ -931,25 +919,31 @@ ul.actions.fit.small li {
     ul.actions {
         margin: 0 0 2rem 0;
     }
+
     ul.actions li {
         padding: 1rem 0 0 0;
         display: block;
         text-align: center;
         width: 100%;
     }
+
     ul.actions li:first-child {
         padding-top: 0;
     }
-    ul.actions li>* {
+
+    ul.actions li > * {
         width: 100%;
         margin: 0 !important;
     }
-    ul.actions li>*.icon:before {
+
+    ul.actions li > *.icon:before {
         margin-left: -2em;
     }
+
     ul.actions.small li {
         padding: 0.5rem 0 0 0;
     }
+
     ul.actions.small li:first-child {
         padding-top: 0;
     }
@@ -1292,7 +1286,7 @@ body.is-article-visible #bg:after {
     text-align: center;
 }
 
-#header>* {
+#header > * {
     -moz-transition: opacity 0.325s ease-in-out;
     -webkit-transition: opacity 0.325s ease-in-out;
     -ms-transition: opacity 0.325s ease-in-out;
@@ -1301,7 +1295,7 @@ body.is-article-visible #bg:after {
     margin-top: 3.5rem;
 }
 
-#header>*:before {
+#header > *:before {
     content: '';
     display: block;
     position: absolute;
@@ -1312,11 +1306,11 @@ body.is-article-visible #bg:after {
     background: #ffffff;
 }
 
-#header> :first-child {
+#header > :first-child {
     margin-top: 0;
 }
 
-#header> :first-child:before {
+#header > :first-child:before {
     display: none;
 }
 
@@ -1354,7 +1348,7 @@ body.is-article-visible #bg:after {
     overflow: hidden;
 }
 
-#header .content .inner> :last-child {
+#header .content .inner > :last-child {
     margin-bottom: 0;
 }
 
@@ -1440,24 +1434,29 @@ body.is-article-visible #header {
 }
 
 @media screen and (max-width: 736px) {
-    #header>* {
+    #header > * {
         margin-top: 2rem;
     }
-    #header>*:before {
+
+    #header > *:before {
         top: calc(-2rem - 1px);
         height: calc(2rem + 1px);
     }
+
     #header .logo {
         width: 4.75rem;
         height: 4.75rem;
         line-height: 4.75rem;
     }
+
     #header .logo .icon:before {
         font-size: 1.75rem;
     }
+
     #header .content .inner {
         padding: 2.5rem 1rem;
     }
+
     #header .content p {
         line-height: 1.875;
     }
@@ -1467,9 +1466,11 @@ body.is-article-visible #header {
     #header {
         padding: 1.5rem 0;
     }
+
     #header .content .inner {
         padding: 2.5rem 0;
     }
+
     #header nav ul {
         -moz-flex-direction: column;
         -webkit-flex-direction: column;
@@ -1478,19 +1479,23 @@ body.is-article-visible #header {
         min-width: 10rem;
         max-width: 100%;
     }
+
     #header nav ul li {
         border-left: 0;
         border-top: solid 1px #ffffff;
     }
+
     #header nav ul li:first-child {
         border-top: 0;
     }
+
     #header nav ul li a {
         height: 3rem;
         line-height: 3rem;
         min-width: 0;
         width: 100%;
     }
+
     #header nav.use-middle:after {
         display: none;
     }
@@ -1599,6 +1604,7 @@ body.is-article-visible #header {
     #main article {
         padding: 3.5rem 2rem 0.5rem 2rem;
     }
+
     #main article .close:before {
         top: 0.875rem;
         left: 0.875rem;
